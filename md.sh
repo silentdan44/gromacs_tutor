@@ -12,5 +12,5 @@
 module purge
 module load gromacs/2021
 
-mpirun -n 1 gmx_mpi mdrun -rdd 2.1 -ntomp 1 -deffnm md_0_1 -nb gpu
+mpirun -n 1 gmx_mpi mdrun -ntomp 1 -deffnm md -nb gpu
 
